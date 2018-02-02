@@ -35,9 +35,9 @@ If you want to modify any of the above setting, you can change `visualize.sh` fi
 
 To generate a GUI for your database you can use:
 
-	./visualize.sh DATABASE_NAME [OUTPUT_DIRECTORY]
-	
-Keep in mind that `OUTPUT_DIRECTORY` is optional and its default is the same as `DATABASE_NAME `.
+	./visualize.sh DATABASE_NAME [USERNAME]
+
+`USERNAME` is optional and will default to 'postgres'.
 
 ---
 
@@ -45,7 +45,7 @@ There are some convenient scripts predefined for already existing projects which
 
 ### Results
 
-The entry point to generated results is `OUTPUT_DIRECTORY/index.html`. It looks as follows:
+The entry point to generated results is `DATABASE_NAME/index.html`. It looks as follows:
 
 #### Tables
 
@@ -68,6 +68,8 @@ which includes:
 ![Relationships](https://monosnap.com/file/ku81U3r1laE5EvrNONp1dU2WLn1Frt.png)
 
 which represents relations themselves (with optional columns to see).
+
+- a `relationships.png` will be generated under `./`.
 
 #### Utility tables
 
